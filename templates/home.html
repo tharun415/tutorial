@@ -1,0 +1,68 @@
+<div style="padding-top: 20px"></div>
+
+<!--- navigation --->
+
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a ui-sref="home"> Home </a></li>
+                <li><a ui-sref=".about">About</a></li>
+                <li class="dropdown"> <a ui-sref="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Courses<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a ui-sref=".html5">HTML 5 </a></li>
+                        <li><a ui-sref=".css"> CSS 3 </a></li>
+                        <li><a ui-sref=".bootstrap"> Bootstrap </a></li>
+                        <li><a ui-sref=".javascript"> JavaScript </a></li>
+                        <li><a ui-sref=".jquery"> Jquery </a></li>
+                        <li><a ui-sref=".angular"> Angularjs </a></li>
+                    </ul>
+                </li>
+
+                <li><a ui-sref=".contact">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li style="color:#ffffff"><a>User</a></li>
+                <li class="dropdown"> <a ui-sref="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="user"></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">profile</a></li>
+                        <li><a href="">Settings</a></li>
+                        <li class="divider"></li>
+                        <li ng-click="logout()"><a href=""><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</nav>
+
+
+
+<div ui-view>
+    <div class="container">
+        <h1 style="color: #d58512">Welcome to Online Web Development Tutorials.</h1>
+        <h3 style="color: #204d74">
+            <ol>
+                <li> HTML 5</li>
+                <li> CSS 3 </li>
+                <li> BOOTSTRAP </li>
+                <li> JAVASCRIPT</li>
+                <li> JQUERY</li>
+                <li> ANGULARJS</li>
+            </ol>
+        </h3>
+    </div>
+
+</div>
+
+<footer style="margin-top:20px;background-color: #0f0f0f;color:#fff">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">Copyright © 2016 Teja Online Store. All Rights Reserved </div>
+        </div>
+    </div>
+</footer>

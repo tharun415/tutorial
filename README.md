@@ -1,2 +1,0 @@
-# tutorial
-Web Development Tutorial
